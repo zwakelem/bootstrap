@@ -10,9 +10,58 @@
 
 <body>
 
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form>
+          <div class="mb-3">
+            <label for="countries" class="form-label">Country</label>
+            <select id="countries" class="form-control">
+              <option selected>Select Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="countries" class="form-label">Country</label>
+            <select id="countries" class="form-control" multiple>
+              <option selected>Select Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form>
+          <div class="mb-3">
+            <label for="u_datalist" class="form-label">Datalist</label>
+            <input list="datalistOptions" id="u_datalist" class="form-control" placeholder="search items here...">
+            <datalist id="datalistOptions">
+              <option value="San Fransisco"></option>
+              <option value="New York"></option>
+              <option value="Seattle"></option>
+              <option value="Los Angeles"></option>
+            </datalist>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-4 mt-5">
+      <div class="col-md-4 mt-2">
         <form>
           <fieldset>
             <legend>Login to continue</legend>
@@ -27,7 +76,49 @@
             <button class="btn btn-success" type="submit">Login</button>
           </fieldset>
         </form>
+      </div>
+    </div>
+  </div>
 
+  <hr>
+
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form>
+            <div class="mb-3">
+              <label class="form-label" for="u_name">Username</label>
+              <input class="form-control" type="text" id="u_name">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_comment">Comment</label>
+              <textarea class="form-control" id="u_comment" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_text">Some Text</label>
+              <input class="form-control form-control-lg" type="text" id="u_text">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_text_1">Small Text</label>
+              <input class="form-control form-control-sm" type="text" id="u_text_1">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_email">email</label>
+              <input class="form-control" type="email" id="u_email" value="zwaks@gmail.com" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_file">File Upload</label>
+              <input class="form-control" type="file" id="u_file">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_file">File Disabled</label>
+              <input class="form-control" type="file" id="u_file" disabled>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="u_colour">Choose Colour</label>
+              <input class="form-control form-control-color" type="color" id="u_colour">
+            </div>
+        </form>
       </div>
     </div>
   </div>
