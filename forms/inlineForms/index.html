@@ -10,19 +10,39 @@
 
 <body>
 
-  <div class="container mt-3">
+  <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label class="form-label" for="custom_range">Range</label>
-            <input class="form-range" type="range" id="custom_range">
+        <form class="row row-cols-lg-auto g-3 align-items-center justify-content-center">
+          <div class="col-12">
+            <label for="inline-username" class="visually-hidden">Username</label>
+            <div class="input-group input-group-sm">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" id="inline-username" placeholder="Username">
+            </div>
           </div>
-          <div class="mb-3">
-            <label class="form-label" for="custom_range">Range</label>
-            <input class="form-range" type="range" id="custom_range" min="0" max="5" step="0.5">
+
+          <div class="col-12">
+            <label for="preference" class="visually-hidden">Preference</label>
+            <select id="preference" class="form-select form-select-sm">
+              <option selected>Select your preference...</option>
+              <option value="1">Option 1</option>
+            </select>
           </div>
+
+          <div class="col-12">
+            <div class="form-check small m-0">
+              <input type="checkbox" id="check" class="form-check-input">
+              <label for="check" class="form-check-label">Remember me</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <input type="submit" class="btn btn-success btn-sm">
+          </div>
+
         </form>
+
       </div>
     </div>
   </div>
